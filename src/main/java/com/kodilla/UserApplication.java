@@ -1,20 +1,8 @@
 package com.kodilla;
 
-public class Main {
+public class UserApplication {
 
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-
-        System.out.println("\n*** RANDOM NUMBERS ***\n");
-        RandomNumbers randomNumbers = new RandomNumbers();
-
-        randomNumbers.generateNumbers();
-
-        System.out.println("min: " + randomNumbers.min());
-        System.out.println("max: " + randomNumbers.max());
-
-        System.out.println("\n*** USERS ***\n");
-
         User[] users = initUsers();
         double average = calculateAverageAge(users);
         printUsers(users, average);

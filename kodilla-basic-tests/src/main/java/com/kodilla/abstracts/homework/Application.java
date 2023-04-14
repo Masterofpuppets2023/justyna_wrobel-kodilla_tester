@@ -15,7 +15,10 @@ public class Application {
         Circle circle = new Circle(17.);
         Square square = new Square(6.);
         Rectangle rectangle = new Rectangle(19.2, 8.4);
+ TAX-3.5
+        Shape[] shapes = new Shape[]{circle, square, rectangle};
         Shape[] shapes = { circle, square, rectangle};
+ master
 
         for (int i=0; i<shapes.length; i++) {
             Shape shape = shapes[i];

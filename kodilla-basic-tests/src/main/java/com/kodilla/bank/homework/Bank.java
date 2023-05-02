@@ -59,10 +59,9 @@ public class Bank {
             return 0;
         }
         int amount = 0;
-        int count = 0;
+        int count = withdrawalCount();
         for (int i=0; i < cashMachines.length; i++) {
             int[] withdrawals = cashMachines[i].getWithdrawals();
-            count += withdrawals.length;
             for (int j=0; j < withdrawals.length; j++) {
                 amount += (-withdrawals[j]);
             }
@@ -78,10 +77,9 @@ public class Bank {
             return 0;
         }
         int amount = 0;
-        int count = 0;
+        int count = depositCount();
         for (int i=0; i < cashMachines.length; i++) {
             int[] deposits = cashMachines[i].getDesposits();
-            count += deposits.length;
             for (int j=0; j < deposits.length; j++) {
                 amount += deposits[j];
             }
